@@ -1,0 +1,30 @@
+{
+  "name": "express-seed",
+  "version": "1.0.0",
+  "description": "express-seed",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/cross-env NODE_ENV=development ./node_modules/.bin/nodemon bin/www.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdPark0723/express-seed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kdPark0723/express-seed/issues"
+  },
+  "homepage": "https://github.com/kdPark0723/express-seed#readme",
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.1"
+  }
+}
