@@ -1,4 +1,5 @@
 require('dotenv').config();
+const convertCamelToSnake = require('../../../util/convertCamelToSnake');
 
 const VALUE_NAME = 'valueName';
 
@@ -17,13 +18,13 @@ function concatElementUserEnvironmentValue(configName, path, current) {
   let currentPath = [];
   for (const property in current) {
     if (property === VALUE_NAME) {
-      valueName = current[property].toUpperCase();
+      valueName = convertCamelToSnake(current[property]);
       currentPath = path.concat([valueName]);
 
       continue;
     }
 
-    const propertyName = property.toUpperCase();
+    const propertyName = convertCamelToSnake(property);
 
     if (current[property] && typeof current[property] === 'object') {
       concatElementUserEnvironmentValue(configName, currentPath, current[property]);

@@ -7,6 +7,6 @@ module.exports = {
   database: {
     valueName: 'db',
 
-    URL: null,
+    url: null,
   },
 };

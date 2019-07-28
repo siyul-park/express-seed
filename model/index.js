@@ -4,8 +4,8 @@ const Sequelize = require('sequelize');
 const config = require('../app/config/environment');
 
 function createSequelize(databaseConfig) {
-  if (databaseConfig.URL) {
-    return new Sequelize(databaseConfig.URL, databaseConfig);
+  if (databaseConfig.url) {
+    return new Sequelize(databaseConfig.url, databaseConfig);
   }
   return new Sequelize(
     `${databaseConfig.dialect}://${databaseConfig.username}:${databaseConfig.password}@${databaseConfig.host}:${databaseConfig.port}/${databaseConfig.database}`,

@@ -116,6 +116,8 @@
       <workItem from="1564308182833" duration="905000" />
       <workItem from="1564309419793" duration="288000" />
       <workItem from="1564309817169" duration="72000" />
+      <workItem from="1564318788320" duration="59000" />
+      <workItem from="1564319029665" duration="92000" />
     </task>
     <task id="LOCAL-00001" summary="express-setting">
       <created>1564290654260</created>
@@ -152,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564308980367</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="리팩토링">
+      <created>1564318825474</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1564318825474</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +186,8 @@
     <MESSAGE value="controller 분리" />
     <MESSAGE value="service로 분리" />
     <MESSAGE value="jest 세팅" />
-    <option name="LAST_COMMIT_MESSAGE" value="jest 세팅" />
+    <MESSAGE value="리팩토링" />
+    <option name="LAST_COMMIT_MESSAGE" value="리팩토링" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
