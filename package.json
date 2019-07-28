@@ -4,7 +4,8 @@
   "description": "express-seed",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/cross-env NODE_ENV=development ./node_modules/.bin/nodemon bin/www.js"
+    "dev": "./node_modules/.bin/cross-env NODE_ENV=development ./node_modules/.bin/nodemon bin/www.js",
+    "test": "./node_modules/.bin/jest --forceExit"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,16 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.2",
-    "nodemon": "^1.19.1"
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  },
+
+  "jest": {
+    "verbose": true,
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/app/config/"
+    ]
   }
 }
