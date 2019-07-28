@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="439b2ee8-b399-4de0-91e3-4035d9efae5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/agent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/integration/app.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/helloWord.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/helloWord.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +113,9 @@
       <workItem from="1564287848138" duration="8240000" />
       <workItem from="1564299392738" duration="588000" />
       <workItem from="1564306688928" duration="518000" />
-      <workItem from="1564308182833" duration="746000" />
+      <workItem from="1564308182833" duration="905000" />
+      <workItem from="1564309419793" duration="288000" />
+      <workItem from="1564309817169" duration="72000" />
     </task>
     <task id="LOCAL-00001" summary="express-setting">
       <created>1564290654260</created>
@@ -148,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564298245973</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="jest 세팅">
+      <created>1564308980367</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564308980367</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +176,8 @@
     <MESSAGE value="라우터 세팅" />
     <MESSAGE value="controller 분리" />
     <MESSAGE value="service로 분리" />
-    <option name="LAST_COMMIT_MESSAGE" value="service로 분리" />
+    <MESSAGE value="jest 세팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="jest 세팅" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

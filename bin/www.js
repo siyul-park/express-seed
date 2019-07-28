@@ -1,9 +1,15 @@
 const app = require('../app');
 const config = require('../app/config/environment');
 const Logger = require('../app/logger');
+const db = require('../models');
 
 const logger = new Logger(config.logger);
 
-app.listen(config.port, () => {
-  logger.log(`Express server has started on port ${config.port}`);
-});
+Promise.resolve(db.sequelize.sync())
+  .then(() => {
+    if (!module.parent) {
+      app.listen(config.port, () => {
+        logger.log(`API server listening on ${config.host}:${config.port}, in ${config.env}`);
+      });
+    }
+  });

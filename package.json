@@ -1,7 +1,7 @@
 {
-  "name": "express-seed",
+  "name": "course-design-express",
   "version": "1.0.0",
-  "description": "express-seed",
+  "description": "course-design-express",
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/.bin/cross-env NODE_ENV=development ./node_modules/.bin/nodemon bin/www.js",
@@ -21,7 +21,9 @@
     "cross-env": "^5.2.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.11.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
@@ -31,7 +33,6 @@
     "nodemon": "^1.19.1",
     "supertest": "^4.0.2"
   },
-
   "jest": {
     "verbose": true,
     "testPathIgnorePatterns": [
