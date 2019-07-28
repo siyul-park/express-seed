@@ -1,7 +1,7 @@
 const app = require('../app');
 const config = require('../app/config/environment');
 const Logger = require('../app/logger');
-const db = require('../models');
+const db = require('../model');
 
 const logger = new Logger(config.logger);
 
