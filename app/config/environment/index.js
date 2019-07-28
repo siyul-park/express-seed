@@ -6,7 +6,9 @@ const VALUE_NAME = 'valueName';
 function getEnvironmentValue(configName, names) {
   let namePath = names[0];
 
-  for (const name of names) namePath += `_${name}`;
+  for (const name of names) {
+    namePath += `_${name}`;
+  }
 
   return process.env[`${namePath}_${configName}`] || process.env[`${namePath}`];
 }
