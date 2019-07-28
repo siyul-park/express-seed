@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
 const config = require('../app/config/environment');
+const convertCamelToPascal = require('../util/convertCamelToPascal');
+
 
 function createSequelize(databaseConfig) {
   if (databaseConfig.url) {
@@ -52,10 +54,9 @@ models.forEach((model) => {
   db[model.name] = model;
 });
 
-
 models.forEach((model) => {
-  const modelPathName = model.name.toString().charAt(0).toLowerCase() + model.name.toString().slice(1);
-  const builderPath = path.join(__dirname, `dataAccessor/${modelPathName}DataAccessorBuilder.js`);
+  const modelClassName = convertCamelToPascal(model.name.toString());
+  const builderPath = path.join(__dirname, `dataAccessor/${modelClassName}DataAccessorBuilder.js`);
   if (fs.existsSync(builderPath) === true) {
     db[`${model.name}DataAccessor`] = require(builderPath).build(db, model, Sequelize.Op, sequelize.fn);
   } else {

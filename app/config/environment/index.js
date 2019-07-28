@@ -1,6 +1,7 @@
 require('dotenv').config();
 const convertCamelToSnake = require('../../../util/convertCamelToSnake');
 
+
 const VALUE_NAME = 'valueName';
 
 function getEnvironmentValue(configName, names) {

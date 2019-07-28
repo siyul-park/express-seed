@@ -2,6 +2,7 @@ const _ = require('lodash');
 const fs = require('fs');
 const path = require('path');
 
+
 function isJsFile(file) {
   return path.extname(file).toLowerCase() === '.js';
 }
