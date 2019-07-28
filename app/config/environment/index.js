@@ -48,16 +48,8 @@ function assignConfig(commonConfig, config) {
   const newConfig = commonConfig;
 
   for (const property in config) {
-    if (newConfig[property]) {
-      if (typeof config[property] === 'object') {
-        if (!newConfig[property]) {
-          newConfig[property] = config[property];
-        } else {
-          newConfig[property] = assignConfig(newConfig[property], config[property]);
-        }
-      } else {
-        newConfig[property] = config[property];
-      }
+    if (newConfig[property] && typeof config[property] === 'object' && newConfig[property]) {
+      newConfig[property] = assignConfig(newConfig[property], config[property]);
     } else {
       newConfig[property] = config[property];
     }
