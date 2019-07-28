@@ -2,6 +2,6 @@ const asyncHandler = require('../util/asyncHandler');
 const helloWorldController = require('../controller/helloWord.controller');
 
 
-module.exports = (app) => {
-  app.get('/', asyncHandler(helloWorldController.helloWorld));
+module.exports = (router) => {
+  router.get('/', asyncHandler(helloWorldController.helloWorld));
 };
