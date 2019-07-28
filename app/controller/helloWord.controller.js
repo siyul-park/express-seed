@@ -2,8 +2,8 @@ const HelloWorldService = require('../service/helloWorld.service');
 
 const helloWorldService = new HelloWorldService();
 
-function helloWorld(req, res) {
-  const response = helloWorldService.print();
+async function helloWorld(req, res) {
+  const response = await helloWorldService.print();
 
   res.send(response);
 }
