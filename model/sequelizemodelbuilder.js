@@ -157,4 +157,4 @@ class SequelizeModelBuilder {
   }
 }
 
-module.exports = SequelizeModelBuilder;
+module.exports = { build: SequelizeModelBuilder.build };
