@@ -1,6 +1,6 @@
 require('dotenv').config();
 const convertCamelToSnake = require('../../../util/convertCamelToSnake');
-
+const Logger = require('../../logger');
 
 const VALUE_NAME = 'valueName';
 
@@ -59,6 +59,12 @@ function assignConfig(commonConfig, config) {
   return newConfig;
 }
 
+function createLogger(config) {
+  const logger = new Logger(config.logger);
+
+  config.logger = logger;
+}
+
 const env = process.env.NODE_ENV || 'development';
 
 const commonConfig = require('./common');
@@ -67,5 +73,7 @@ const currentConfig = require(`./${env}`);
 const config = assignConfig(commonConfig, currentConfig);
 
 concatUserEnvironmentValue(config, `${env}`);
+
+createLogger(config);
 
 module.exports = config;

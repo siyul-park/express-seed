@@ -5,17 +5,20 @@ const config = require('../app/config/environment');
 const convertCamelToPascal = require('../util/convertCamelToPascal');
 
 
-function createSequelize(databaseConfig) {
+function createSequelize(databaseConfig, options) {
   if (databaseConfig.url) {
-    return new Sequelize(databaseConfig.url, databaseConfig);
+    return new Sequelize(databaseConfig.url, options);
   }
   return new Sequelize(
     `${databaseConfig.dialect}://${databaseConfig.username}:${databaseConfig.password}@${databaseConfig.host}:${databaseConfig.port}/${databaseConfig.database}`,
-    databaseConfig,
+    options,
   );
 }
 
-const sequelize = createSequelize(config.database);
+const sequelize = createSequelize(config.database,
+  {
+    logging: msg => config.logger.log(msg),
+  });
 
 function loadModel(file) {
   return sequelize.import(path.join(__dirname, file));
