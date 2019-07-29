@@ -1,9 +1,11 @@
+const packageInfo = require('../../../package.json');
+
 module.exports = {
   host: 'localhost',
   port: 7070,
 
   logger: {
-    name: 'course-design-backend-dev',
+    name: packageInfo.name,
     streams: [{
       type: 'stream',
       stream: process.stdout,

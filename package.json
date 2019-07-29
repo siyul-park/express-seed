@@ -1,7 +1,7 @@
 {
-  "name": "course-design-express",
+  "name": "express-seed",
   "version": "1.0.0",
-  "description": "course-design-express",
+  "description": "express-seed",
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/.bin/cross-env NODE_ENV=development ./node_modules/.bin/nodemon bin/www.js",
@@ -23,7 +23,9 @@
     "express": "^4.17.1",
     "lodash": "^4.17.15",
     "mysql2": "^1.6.5",
-    "sequelize": "^5.11.0"
+    "sequelize": "^5.11.0",
+    "swagger-jsdoc": "^3.3.0",
+    "swagger-ui-express": "^4.0.7"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
