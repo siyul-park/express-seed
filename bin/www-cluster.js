@@ -29,17 +29,13 @@ function createWorker(count) {
   }
 }
 
-if (cluster.isMaster) {
-  config.logger.log(`Server ID : ${instanceId}`);
-  config.logger.log(`Server CPU Number : ${cpuCount}`);
-  config.logger.log(`Create Worker Number : ${workerCount}`);
-
-  createWorker(workerCount);
-
+function setOnlineListener() {
   cluster.on('online', (worker) => {
     config.logger.log(`Worker[${worker.process.pid}] online`);
   });
+}
 
+function setExitListener() {
   cluster.on('exit', (worker) => {
     config.logger.log(`Worker[${worker.process.pid}] death`);
     config.logger.log('Create other worker');
@@ -47,6 +43,17 @@ if (cluster.isMaster) {
     const newWorker = cluster.fork();
     newWorker.on('message', workerMsgListener);
   });
+}
+
+if (cluster.isMaster) {
+  config.logger.log(`Server ID : ${instanceId}`);
+  config.logger.log(`Server CPU Number : ${cpuCount}`);
+  config.logger.log(`Create Worker Number : ${workerCount}`);
+
+  createWorker(workerCount);
+
+  setOnlineListener();
+  setExitListener();
 } else if (cluster.isWorker) {
   const workerId = cluster.worker.id;
 
