@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="439b2ee8-b399-4de0-91e3-4035d9efae5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/www-cluster.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/environment/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/environment/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/service/helloWorld.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/helloWorld.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +76,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.dev-cluster">
     <configuration name="dev-cluster" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -122,8 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.dev-cluster" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.prd" />
         <item itemvalue="npm.test" />
       </list>
@@ -150,7 +147,7 @@
       <workItem from="1564478810853" duration="38000" />
       <workItem from="1564479388275" duration="301000" />
       <workItem from="1564479690273" duration="6000" />
-      <workItem from="1564490683243" duration="9261000" />
+      <workItem from="1564490683243" duration="9606000" />
     </task>
     <task id="LOCAL-00001" summary="express-setting">
       <created>1564290654260</created>
@@ -215,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564497853775</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="클러스터 작">
+      <created>1564500027496</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564500027496</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,18 +247,7 @@
     <MESSAGE value="리팩토링" />
     <MESSAGE value="오류 Catch" />
     <MESSAGE value="도커 세팅" />
-    <option name="LAST_COMMIT_MESSAGE" value="도커 세팅" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/service/helloWorld.service.js</url>
-          <line>2</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="클러스터 작" />
+    <option name="LAST_COMMIT_MESSAGE" value="클러스터 작" />
   </component>
 </project>
