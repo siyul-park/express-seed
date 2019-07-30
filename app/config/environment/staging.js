@@ -1,5 +1,5 @@
 const config = {
-  port: 3002,
+  port: 7073,
 
   database: {
     valueName: 'db',

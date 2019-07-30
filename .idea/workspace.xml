@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="439b2ee8-b399-4de0-91e3-4035d9efae5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/environment/development.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/environment/development.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/environment/production.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/environment/production.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/environment/staging.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/environment/staging.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/environment/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/environment/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,12 +44,13 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1OcrhewgnWkQsqfgAkTgQIr47ga" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ssulite-koa" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="$USER_HOME$/.nvm/versions/node/v10.15.3/bin/node" />
@@ -53,11 +64,12 @@
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/router/v1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/router/v1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,7 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.prd">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -80,6 +92,16 @@
         <script value="dev" />
       </scripts>
       <node-interpreter value="$USER_HOME$/.nvm/versions/node/v10.15.3/bin/node" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="prd" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prd" />
+      </scripts>
+      <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
@@ -95,6 +117,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.prd" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.test" />
       </list>
@@ -121,6 +144,7 @@
       <workItem from="1564478810853" duration="38000" />
       <workItem from="1564479388275" duration="301000" />
       <workItem from="1564479690273" duration="6000" />
+      <workItem from="1564490683243" duration="7130000" />
     </task>
     <task id="LOCAL-00001" summary="express-setting">
       <created>1564290654260</created>
