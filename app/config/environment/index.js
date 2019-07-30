@@ -33,7 +33,7 @@ function concatElementUserEnvironmentValue(configName, path, current) {
     }
 
     const environmentValue = getEnvironmentValue(
-      configName, currentPath.concat([propertyName]),
+      convertCamelToSnake(configName), currentPath.concat([propertyName]),
     );
     current[property] = environmentValue || current[property];
   }
