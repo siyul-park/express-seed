@@ -6,7 +6,7 @@ function run(masterId = null, workerId = null) {
   Promise.resolve(db.sequelize.sync())
     .then(() => {
       app.listen(config.port, config.host, () => {
-        let message = masterId ? `Worker[${masterId}-${workerId}] ` : '';
+        let message = masterId ? `Server[${masterId}-${workerId}] ` : '';
         message += `API server listening on http://${config.host}:${config.port}, in ${config.env}`;
 
         config.logger.log(message);
