@@ -10,4 +10,5 @@ Promise.resolve(db.sequelize.sync())
         config.logger.log(`API server listening on ${config.host}:${config.port}, in ${config.env}`);
       });
     }
-  });
+  })
+  .catch(reason => config.logger.warn(reason));
