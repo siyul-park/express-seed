@@ -7,6 +7,9 @@
     "dev": "./node_modules/.bin/cross-env NODE_ENV=development  ./node_modules/.bin/nodemon bin/www.js",
     "stg": "./node_modules/.bin/cross-env NODE_ENV=staging node bin/www.js",
     "prd": "./node_modules/.bin/cross-env NODE_ENV=production node bin/www.js",
+    "dev-cluster": "./node_modules/.bin/cross-env NODE_ENV=development  ./node_modules/.bin/nodemon bin/www-cluster.js",
+    "stg-cluster": "./node_modules/.bin/cross-env NODE_ENV=staging node bin/www-cluster.js",
+    "prd-cluster": "./node_modules/.bin/cross-env NODE_ENV=production node bin/www-cluster.js",
     "test": "./node_modules/.bin/jest --forceExit"
   },
   "repository": {
@@ -20,14 +23,17 @@
   },
   "homepage": "https://github.com/kdPark0723/express-seed#readme",
   "dependencies": {
+    "cluster": "^0.7.7",
     "cross-env": "^5.2.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
     "mysql2": "^1.6.5",
+    "os": "^0.1.1",
     "sequelize": "^5.11.0",
     "swagger-jsdoc": "^3.3.0",
-    "swagger-ui-express": "^4.0.7"
+    "swagger-ui-express": "^4.0.7",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "eslint": "^5.3.0",

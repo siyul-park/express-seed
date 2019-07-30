@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="439b2ee8-b399-4de0-91e3-4035d9efae5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/www-cluster.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/environment/development.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/environment/development.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/environment/production.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/environment/production.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/environment/staging.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/environment/staging.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/environment/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/environment/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www.js" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/environment/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/environment/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/service/helloWorld.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/helloWorld.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,7 +79,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.prd">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev-cluster" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev-cluster" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -117,8 +122,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.prd" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.dev-cluster" />
+        <item itemvalue="npm.prd" />
         <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
@@ -144,7 +150,7 @@
       <workItem from="1564478810853" duration="38000" />
       <workItem from="1564479388275" duration="301000" />
       <workItem from="1564479690273" duration="6000" />
-      <workItem from="1564490683243" duration="7130000" />
+      <workItem from="1564490683243" duration="9261000" />
     </task>
     <task id="LOCAL-00001" summary="express-setting">
       <created>1564290654260</created>
@@ -202,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564479609869</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="도커 세팅">
+      <created>1564497853775</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564497853775</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,15 +242,17 @@
     <MESSAGE value="jest 세팅" />
     <MESSAGE value="리팩토링" />
     <MESSAGE value="오류 Catch" />
-    <option name="LAST_COMMIT_MESSAGE" value="오류 Catch" />
+    <MESSAGE value="도커 세팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="도커 세팅" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/controller/helloWord.controller.js</url>
-          <line>5</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/app/service/helloWorld.service.js</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

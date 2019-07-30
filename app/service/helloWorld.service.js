@@ -1,6 +1,6 @@
 class HelloWorldService {
   async print() {
-    return 'Hello World!';
+    return `Hello World!`;
   }
 }
 
