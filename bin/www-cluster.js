@@ -6,11 +6,10 @@ const server = require('../app/server');
 
 
 cluster.schedulingPolicy = cluster.SCHED_RR;
-const instanceId = uuid.v4();
 
+const instanceId = uuid.v4();
 const cpuCount = os.cpus().length;
 const workerCount = cpuCount / config.numberOfContainers;
-
 
 function workerMsgListener(msg) {
   const { workerId } = msg;
