@@ -2,6 +2,7 @@ const cluster = require('cluster');
 const os = require('os');
 const uuid = require('uuid');
 const config = require('../app/config/environment');
+const logger = require('../app/logger');
 const server = require('../app/server');
 
 
@@ -21,7 +22,7 @@ function workerMsgListener(msg) {
 
 function createWorker(count) {
   for (let i = 0; i < count; i++) {
-    config.logger.log(`Create Worker [${i + 1}/${count}]`);
+    logger.info(`Create Worker [${i + 1}/${count}]`);
     const worker = cluster.fork();
 
     worker.on('message', workerMsgListener);
@@ -30,14 +31,14 @@ function createWorker(count) {
 
 function setOnlineListener() {
   cluster.on('online', (worker) => {
-    config.logger.log(`Worker[${worker.process.pid}] online`);
+    logger.info(`Worker[${worker.process.pid}] online`);
   });
 }
 
 function setExitListener() {
   cluster.on('exit', (worker) => {
-    config.logger.log(`Worker[${worker.process.pid}] death`);
-    config.logger.log('Create other worker');
+    logger.error(`Worker[${worker.process.pid}] death`);
+    logger.info('Create other worker');
 
     const newWorker = cluster.fork();
     newWorker.on('message', workerMsgListener);
@@ -45,9 +46,9 @@ function setExitListener() {
 }
 
 if (cluster.isMaster) {
-  config.logger.log(`Server ID : ${instanceId}`);
-  config.logger.log(`Server CPU Number : ${cpuCount}`);
-  config.logger.log(`Create Worker Number : ${workerCount}`);
+  logger.info(`Server ID : ${instanceId}`);
+  logger.info(`Server CPU Number : ${cpuCount}`);
+  logger.info(`Create Worker Number : ${workerCount}`);
 
   createWorker(workerCount);
 
