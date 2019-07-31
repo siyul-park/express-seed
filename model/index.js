@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
 const config = require('../app/config/environment');
+const logger = require('../app/logger');
 const convertCamelToPascal = require('../util/convertCamelToPascal');
 
 
@@ -17,7 +18,7 @@ function createSequelize(databaseConfig, options) {
 
 const sequelize = createSequelize(config.database,
   {
-    logging: msg => config.logger.log(msg),
+    logging: msg => logger.info(msg),
   });
 
 function loadModel(file) {

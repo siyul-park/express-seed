@@ -7,10 +7,13 @@ module.exports = {
 
   logger: {
     name: packageInfo.name,
-    streams: [{
-      type: 'stream',
-      stream: process.stdout,
+    transports: [{
+      type: 'console',
       level: 'debug',
+    }, {
+      type: 'file',
+      filename: 'log/server.log',
+      level: 'error',
     }],
   },
 

@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="439b2ee8-b399-4de0-91e3-4035d9efae5e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../coursedesign-express/scripts/deploy-script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../coursedesign-express/scripts/deploy-script.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coursedesign-express/scripts/npm-start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../coursedesign-express/scripts/npm-start.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/winston/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/express-seed.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/express-seed.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/environment/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/environment/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/environment/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/environment/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logger/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/logger/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../coursedesign-express" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -77,7 +85,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.stg">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev-cluster (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/../coursedesign-express/package.json" />
       <command value="run" />
@@ -88,11 +96,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev-cluster" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev-cluster" />
+        <script value="dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -130,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.stg" />
         <item itemvalue="npm.prd (1)" />
         <item itemvalue="npm.prd" />
         <item itemvalue="npm.dev-cluster (1)" />
-        <item itemvalue="npm.dev-cluster" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +168,11 @@
       <workItem from="1564479388275" duration="301000" />
       <workItem from="1564479690273" duration="6000" />
       <workItem from="1564490683243" duration="10491000" />
-      <workItem from="1564536725851" duration="7052000" />
+      <workItem from="1564536725851" duration="7914000" />
+      <workItem from="1564555333155" duration="1160000" />
+      <workItem from="1564570641118" duration="45000" />
+      <workItem from="1564573098367" duration="105000" />
+      <workItem from="1564575504366" duration="2750000" />
     </task>
     <task id="LOCAL-00001" summary="express-setting">
       <created>1564290654260</created>
@@ -302,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564550916420</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="도커화">
+      <created>1564551806580</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1564551806580</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +354,31 @@
     <MESSAGE value="AWS code deploy" />
     <MESSAGE value="오류 수정" />
     <MESSAGE value="스크립트 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="스크립트 변경" />
+    <MESSAGE value="도커화" />
+    <option name="LAST_COMMIT_MESSAGE" value="도커화" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/logger/index.js</url>
+          <line>6</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/config/winston/index.js</url>
+          <line>19</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/model/index.js</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

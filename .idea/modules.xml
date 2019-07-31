@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../coursedesign-express/.idea/coursedesign-express.iml" filepath="$PROJECT_DIR$/../coursedesign-express/.idea/coursedesign-express.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/express-seed.iml" filepath="$PROJECT_DIR$/.idea/express-seed.iml" />
     </modules>
   </component>
